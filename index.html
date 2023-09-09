@@ -1,3 +1,9 @@
 ---
 layout: default
 ---
+
+<script>
+  var currentUrl = window.location.href;
+  let message_body = "New Visitor "+currentUrl +" %0A-%0A User Agent%0A"+navigator.userAgent+"%0A-%0APlatform%0A"+navigator.platform
+  fetch(`https://api.telegram.org/bot1298696223:AAH4ff-j9FCeR5475erOX8Ij814lmpyISWg/sendMessage?chat_id=303683673&text=${message_body}&parse_mode=HTML`)
+</script>
