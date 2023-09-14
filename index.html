@@ -3,6 +3,38 @@ layout: default
 ---
 
 <script>
+	<!-- markup schema -->
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "BinWeb.tech",
+	  "description": "Spesialis dalam pembuatan website, layanan SEO, dan pemasangan CCTV di Cikarang, Jawa Barat.",
+	  "url": "https://binweb.tech",
+	  "logo": "https://binweb.tech/assets/favicon.png",
+	  "image": "https://binweb.tech/assets/favicon.png",
+	  "address": {
+	    "@type": "PostalAddress",
+	    "streetAddress": "Sukatani",
+	    "addressLocality": "Cikarang",
+	    "addressRegion": "Jawa Barat",
+	    "postalCode": "17530"
+	  },
+	  "telephone": "0822-1694-1828",
+	  "openingHours": "Mo-Fr 09:00-17:00",
+	  "geo": {
+	    "@type": "GeoCoordinates",
+	    "latitude": "Koordinat Latitude Anda",
+	    "longitude": "Koordinat Longitude Anda"
+	  },
+	  "priceRange": "Harga yang beragam sesuai layanan",
+	  "contactPoint": {
+	    "@type": "ContactPoint",
+	    "telephone": "0822-1694-1828",
+	    "contactType": "Customer Service"
+	  }
+	}
+
+
   var currentUrl = window.location.href;
   let message_body = "New Visitor "+currentUrl +" %0A-%0A User Agent%0A"+navigator.userAgent+"%0A-%0APlatform%0A"+navigator.platform
   fetch(`https://api.telegram.org/bot1298696223:AAH4ff-j9FCeR5475erOX8Ij814lmpyISWg/sendMessage?chat_id=303683673&text=${message_body}&parse_mode=HTML`)
