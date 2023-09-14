@@ -36,3 +36,12 @@
     font-weight: 400;
   }
 }
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
