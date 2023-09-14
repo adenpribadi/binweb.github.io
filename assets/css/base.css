@@ -1,0 +1,59 @@
+ .container {
+  	font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 10px;
+  }
+
+
+  /* Atur tampilan kolom pada layar kecil */
+  @media screen and (max-width: 600px) {
+  	.container {
+	    font-size: 20px;
+  	}
+    .column {
+      flex-basis: 100%;
+    }
+  }
+
+ /* Tambahkan CSS untuk membuat tabel responsif */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  th {
+    background-color: #1a222c;
+    color: white;
+  }
+
+  /* Atur tampilan tabel pada layar kecil */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    th {
+      text-align: center;
+    }
+    th, td {
+      /* Tambahkan beberapa gaya tambahan sesuai kebutuhan Anda */
+      padding: 10px;
+      text-align: left;
+    }
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+  }
