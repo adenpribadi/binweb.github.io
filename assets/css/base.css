@@ -11,6 +11,9 @@
     margin: 10px;
   }
 
+	.column, h2, h3 {
+    font-weight: 400;
+  }
 
   /* Atur tampilan kolom pada layar kecil */
   @media screen and (max-width: 600px) {
