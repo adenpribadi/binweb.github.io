@@ -4,6 +4,9 @@ description: Optimalkan bisnis Anda dengan Jasa Pembuatan Website, Layanan SEO, 
 keywords: jasa pembuatan website cikarang, jasa SEO cikarang, jasa SEO Website cikarang, jasa pasang cctv cikarang, jasa pemasangan cctv di cikarang
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://binweb.tech" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
 
 # User settings
 username: binweb.tech
